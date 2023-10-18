@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Maturity Prediction</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Crop Maturity Prediction</h1>
+    <form id="prediction-form">
+        <label for="crop-type">Crop Type:</label>
+        <select id="crop-type" name="crop-type">
+            <option value="kharif">Kharif</option>
+            <option value="rabi">Rabi</option>
+            <option value="zaid">Zaid</option>
+        </select><br>
+
+        <label for="time-of-grown-crop">Time of Grown Crop (days):</label>
+        <input type="text" id="time-of-grown-crop" name="time-of-grown-crop" required><br>
+
+        <label for="temperature">Temperature (°C):</label>
+        <input type="text" id="temperature" name="temperature" required><br>
+
+        <label for "rainfall">Rainfall (cm):</label>
+        <input type="text" id="rainfall" name="rainfall" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    <div id="prediction-result">
+        <p>Predicted Crop Maturity: <span id="result-value"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
